@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>アカウント削除案内 - Schelove</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Noto Sans JP', sans-serif;
+            background: #f5f5f5;
+            color: #333;
+            line-height: 1.8;
+        }
+        .header {
+            background: linear-gradient(135deg, #ff6b9d 0%, #c026d3 100%);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .header h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+        .header p {
+            opacity: 0.9;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        .card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .warning-card {
+            background: linear-gradient(135deg, #fff5f5 0%, #ffe0e6 100%);
+            border: 2px solid #ff6b9d;
+        }
+        h2 {
+            color: #ff6b9d;
+            margin-bottom: 15px;
+            font-size: 20px;
+        }
+        h3 {
+            color: #333;
+            margin: 20px 0 10px;
+            font-size: 17px;
+        }
+        p, li {
+            color: #555;
+            margin-bottom: 10px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        .step {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        .step-number {
+            background: linear-gradient(135deg, #ff6b9d 0%, #c026d3 100%);
+            color: white;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+        .step-content {
+            flex: 1;
+        }
+        .step-title {
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 5px;
+        }
+        .warning-text {
+            color: #c026d3;
+            font-weight: bold;
+        }
+        .email-link {
+            color: #ff6b9d;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .email-link:hover {
+            text-decoration: underline;
+        }
+        .back-link {
+            display: inline-block;
+            margin-top: 20px;
+            color: #ff6b9d;
+            text-decoration: none;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        .data-list {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 15px;
+        }
+        .data-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+        }
+        .data-list li:last-child {
+            border-bottom: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>アカウント削除案内</h1>
+        <p>Schelove - K-popスケジュールカレンダー</p>
+    </div>
+
+    <div class="container">
+        <div class="card warning-card">
+            <h2>削除前に必ずご確認ください</h2>
+            <p class="warning-text">アカウントを削除すると、すべてのデータが永久に削除され、復元することはできません。</p>
+            <p>登録したスケジュール、D-day通知、AI話し方設定などすべての情報が消去されます。慎重にご判断ください。</p>
+        </div>
+
+        <div class="card">
+            <h2>アプリから削除する</h2>
+            <div class="step">
+                <div class="step-number">1</div>
+                <div class="step-content">
+                    <div class="step-title">アプリを起動</div>
+                    <p>Scheloveアプリを起動します。</p>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <div class="step-content">
+                    <div class="step-title">設定メニューに移動</div>
+                    <p>下部メニューから設定アイコンをタップします。</p>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <div class="step-content">
+                    <div class="step-title">退会を選択</div>
+                    <p>設定メニュー下部の「退会する」ボタンをタップします。</p>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-number">4</div>
+                <div class="step-content">
+                    <div class="step-title">削除を確認</div>
+                    <p>案内メッセージを確認し、「退会」ボタンをタップするとアカウントが即時削除されます。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>メールで削除リクエスト</h2>
+            <p>アプリから削除が難しい場合は、メールでリクエストできます。</p>
+            <ul>
+                <li>宛先：<a href="mailto:pung0805@gmail.com" class="email-link">pung0805@gmail.com</a></li>
+                <li>件名：[Schelove] アカウント削除リクエスト</li>
+                <li>内容：ご登録のメールアドレスを記載してください</li>
+            </ul>
+            <p>リクエスト確認後、<strong>営業日基準3日以内</strong>に処理されます。</p>
+        </div>
+
+        <div class="card">
+            <h2>削除されるデータ</h2>
+            <p>アカウント削除時に以下のデータがすべて永久削除されます：</p>
+            <ul class="data-list">
+                <li>会員情報（メール、名前、プロフィール写真）</li>
+                <li>登録したすべてのスケジュール</li>
+                <li>D-day通知設定</li>
+                <li>推しアイドル/グループ情報</li>
+                <li>AI話し方設定</li>
+                <li>コミュニティ投稿およびコメント</li>
+                <li>すべてのサービス利用記録</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>よくある質問</h2>
+
+            <h3>Q. 削除後に同じアカウントで再登録できますか？</h3>
+            <p>はい、可能です。ただし、以前のデータは復元されず、新規会員として登録されます。</p>
+
+            <h3>Q. 削除後にデータの復元は可能ですか？</h3>
+            <p>いいえ、削除されたデータはいかなる場合も復元できません。</p>
+
+            <h3>Q. 削除処理にはどのくらいかかりますか？</h3>
+            <p>アプリ内での削除は即時処理されます。メールでのリクエストは営業日基準3日以内に処理されます。</p>
+        </div>
+
+        <div class="card">
+            <h2>お問い合わせ</h2>
+            <p>アカウント削除に関してご不明な点がございましたら、お気軽にお問い合わせください。</p>
+            <ul>
+                <li>運営者：PungPung Studio</li>
+                <li>メール：<a href="mailto:pung0805@gmail.com" class="email-link">pung0805@gmail.com</a></li>
+            </ul>
+        </div>
+
+        <p style="text-align: center;">
+            <a href="privacy-ja.html" class="back-link">プライバシーポリシーを見る</a>
+            &nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="index.html" class="back-link">メインに戻る</a>
+        </p>
+    </div>
+</body>
+</html>
