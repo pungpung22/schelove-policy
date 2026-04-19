@@ -81,6 +81,19 @@
     </div>
 
     <div class="container">
+        <div class="card" style="background:#FFF5F8; border:1px solid #FFD4E3;">
+            <h2>📊 Google Play データセーフティ要約</h2>
+            <p>Google Play Consoleの「データセーフティ」フォームと1対1で対応する要約です。</p>
+            <ul>
+                <li><strong>収集:</strong> メール、氏名、プロフィール画像、スケジュール情報、推しアイドル、広告ID、IP、デバイス情報</li>
+                <li><strong>共有:</strong> スケジュール/推し → OpenAI（AI応援メッセージ生成、個人識別情報は送信しない）／広告ID・IP → Google AdMob</li>
+                <li><strong>データ販売（Sell）：なし</strong></li>
+                <li><strong>通信経路の暗号化:</strong> HTTPS / TLS 1.2以上</li>
+                <li><strong>データ削除請求:</strong> アプリ内<strong>[設定 → 退会]</strong>、またはメール <a href="mailto:pung0805@gmail.com" style="color:#ff6b9d;">pung0805@gmail.com</a></li>
+                <li><strong>対象年齢:</strong> 13歳以上の一般利用者（K-popスケジュールアプリ、Google Play Familiesポリシー対象外）</li>
+            </ul>
+        </div>
+
         <div class="card">
             <h2>1. 個人情報の収集および利用目的</h2>
             <p>PungPung Studio（以下「運営者」）が提供するSchelove（以下「アプリ」）は、以下の目的で個人情報を収集および利用します：</p>
@@ -106,6 +119,23 @@
                 <li>AI話し方設定</li>
                 <li>D-day通知設定</li>
                 <li>サービス利用記録</li>
+            </ul>
+
+            <h3>第三者SDKが自動収集する情報</h3>
+            <ul>
+                <li><strong>Google AdMob:</strong> 広告識別子（AAID/IDFA）、IPアドレス、デバイス情報、アプリ使用イベント</li>
+                <li><strong>OpenAI:</strong> AI応援メッセージ生成のため、スケジュール/推し/話し方設定を送信（個人識別情報は送信しない）</li>
+                <li><strong>Firebase / FCM:</strong> プッシュ通知送信のためのデバイストークン</li>
+            </ul>
+
+            <h3>収集しない情報（最小収集の原則）</h3>
+            <ul>
+                <li><strong>センシティブ情報:</strong> マイナンバー、クレジットカード、口座番号、生体情報、健康・宗教・政治情報</li>
+                <li><strong>通信データ:</strong> 電話番号、SMS、通話履歴、連絡先（アドレス帳）</li>
+                <li><strong>ハードウェア識別子:</strong> IMEI、MACアドレス、シリアル番号（Googleのリセット可能な広告IDのみ使用）</li>
+                <li><strong>精密位置情報:</strong> GPS、Wi-Fiベースの精密位置</li>
+                <li><strong>端末内ファイル:</strong> ギャラリー画像のスキャン、他アプリのデータ、インストール済みアプリの一覧</li>
+                <li><strong>リアルタイム入力:</strong> マイク、カメラ、キー入力、画面キャプチャ</li>
             </ul>
         </div>
 
@@ -140,7 +170,15 @@
                 <li>デバイス情報およびIPアドレス</li>
                 <li>アプリ利用履歴</li>
             </ul>
-            <p>Googleの広告ポリシーおよび個人情報の取り扱いについては<a href="https://policies.google.com/technologies/ads" target="_blank" style="color:#ff6b9d;">Google広告ポリシー</a>をご確認ください。デバイス設定の「広告IDのリセット/削除」により、パーソナライズ広告を制限できます。</p>
+            <p>デバイス設定の「広告IDのリセット/削除」（Android）または「Appからのトラッキング要求を許可」をオフ（iOS）にすることで、パーソナライズ広告を制限できます。</p>
+
+            <h4 style="margin-top:15px; font-size:15px; color:#333;">AdMob広告パートナー</h4>
+            <p>AdMobはGoogleが承認した第三者広告ネットワーク（例: Meta Audience Network、AppLovin、Unity Ads等）を通じて入札・仲介する場合があります。</p>
+            <ul>
+                <li><a href="https://support.google.com/admob/answer/9012903" target="_blank" style="color:#ff6b9d;">Google認定の広告購入者および供給パートナー一覧</a></li>
+                <li><a href="https://policies.google.com/technologies/partner-sites" target="_blank" style="color:#ff6b9d;">Googleパートナーサイトおよびアプリの情報収集について</a></li>
+                <li><a href="https://policies.google.com/technologies/ads" target="_blank" style="color:#ff6b9d;">Google広告ポリシー</a></li>
+            </ul>
         </div>
 
         <div class="card">
@@ -165,11 +203,12 @@
         </div>
 
         <div class="card">
-            <h2>7. アカウント削除方法</h2>
-            <p>退会およびアカウント削除は以下のように行えます：</p>
+            <h2>7. アカウント削除方法（Google Play要件に準拠）</h2>
+            <p>Google Play「<a href="https://support.google.com/googleplay/android-developer/answer/13327111" target="_blank" style="color:#ff6b9d;">アカウント削除</a>」要件に準拠し、以下の経路でアカウントとデータを削除できます：</p>
             <ul>
-                <li><strong>アプリ内で：</strong>設定 > 退会ボタンをクリック</li>
-                <li><strong>メール：</strong>pung0805@gmail.comに退会リクエスト</li>
+                <li><strong>アプリ内削除（推奨）：</strong>設定 > 退会ボタンをクリック → 即時削除</li>
+                <li><strong>ウェブから削除：</strong><a href="delete-account-ja.html" style="color:#ff6b9d;">アカウント削除案内</a></li>
+                <li><strong>メールで削除請求：</strong><a href="mailto:pung0805@gmail.com" style="color:#ff6b9d;">pung0805@gmail.com</a>（営業日ベースで3日以内に処理）</li>
             </ul>
             <p>アカウント削除時に以下のデータが即時に永久削除されます：</p>
             <ul>

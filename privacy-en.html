@@ -81,6 +81,19 @@
     </div>
 
     <div class="container">
+        <div class="card" style="background:#FFF5F8; border:1px solid #FFD4E3;">
+            <h2>📊 Google Play Data Safety Summary</h2>
+            <p>This summary maps directly to the "Data Safety" form on Google Play Console.</p>
+            <ul>
+                <li><strong>Collected:</strong> email, name, profile photo, schedule info, preferred idol, Advertising ID, IP, device info</li>
+                <li><strong>Shared:</strong> schedule / preferred idol → OpenAI (for AI cheer message generation, no personal identifiers) / Advertising ID, IP → Google AdMob</li>
+                <li><strong>No sale of data.</strong></li>
+                <li><strong>Encrypted in transit:</strong> HTTPS / TLS 1.2+</li>
+                <li><strong>Data deletion:</strong> in-app <strong>[Settings → Delete Account]</strong> or email <a href="mailto:pung0805@gmail.com" style="color:#ff6b9d;">pung0805@gmail.com</a></li>
+                <li><strong>Target audience:</strong> general users aged 13+ (K-pop schedule app, not covered by the Google Play Families program)</li>
+            </ul>
+        </div>
+
         <div class="card">
             <h2>1. Purpose of Collecting and Using Personal Information</h2>
             <p>Schelove (the "App"), operated by PungPung Studio (the "Operator"), collects and uses personal information for the following purposes:</p>
@@ -106,6 +119,23 @@
                 <li>AI speech style settings</li>
                 <li>D-day notification settings</li>
                 <li>Service usage records</li>
+            </ul>
+
+            <h3>Information collected by third-party SDKs</h3>
+            <ul>
+                <li><strong>Google AdMob:</strong> Advertising ID (AAID/IDFA), IP address, device info, app usage events</li>
+                <li><strong>OpenAI:</strong> schedule / preferred idol / speech style (transmitted for AI cheer message generation; no personal identifiers)</li>
+                <li><strong>Firebase / FCM:</strong> device token (for push notifications)</li>
+            </ul>
+
+            <h3>Information we do NOT collect (data minimization)</h3>
+            <ul>
+                <li><strong>Sensitive data:</strong> national ID, credit card, bank account, biometric data, health / religious / political data</li>
+                <li><strong>Communications data:</strong> phone number, SMS, call history, contacts (address book)</li>
+                <li><strong>Hardware identifiers:</strong> IMEI, MAC address, serial number (only the resettable Advertising ID is used)</li>
+                <li><strong>Precise location:</strong> GPS or Wi-Fi-based precise location</li>
+                <li><strong>On-device files:</strong> gallery scans, other apps' data, list of installed apps</li>
+                <li><strong>Real-time inputs:</strong> microphone, camera, keystrokes, screen captures</li>
             </ul>
         </div>
 
@@ -140,7 +170,15 @@
                 <li>Device information and IP address</li>
                 <li>App usage history</li>
             </ul>
-            <p>Google's advertising policies and privacy practices can be found at <a href="https://policies.google.com/technologies/ads" target="_blank" style="color:#ff6b9d;">Google Advertising Policies</a>. Users can limit personalized ads by resetting or deleting the Advertising ID in device settings.</p>
+            <p>You can limit personalized ads by resetting / deleting the Advertising ID (Android) or disabling "Allow Apps to Request to Track" (iOS).</p>
+
+            <h4 style="margin-top:15px; font-size:15px; color:#333;">AdMob advertising partners</h4>
+            <p>AdMob may mediate or bid through Google-approved third-party ad networks (e.g., Meta Audience Network, AppLovin, Unity Ads).</p>
+            <ul>
+                <li><a href="https://support.google.com/admob/answer/9012903" target="_blank" style="color:#ff6b9d;">Google-certified ad buyers and supply partners</a></li>
+                <li><a href="https://policies.google.com/technologies/partner-sites" target="_blank" style="color:#ff6b9d;">How Google partner sites and apps use information</a></li>
+                <li><a href="https://policies.google.com/technologies/ads" target="_blank" style="color:#ff6b9d;">Google Advertising Policies</a></li>
+            </ul>
         </div>
 
         <div class="card">
@@ -165,11 +203,12 @@
         </div>
 
         <div class="card">
-            <h2>7. How to Delete Your Account</h2>
-            <p>Account deletion can be done as follows:</p>
+            <h2>7. How to Delete Your Account (Google Play requirement)</h2>
+            <p>In compliance with Google Play's <a href="https://support.google.com/googleplay/android-developer/answer/13327111" target="_blank" style="color:#ff6b9d;">Account deletion requirement</a>, you can delete your account and data through any of these paths:</p>
             <ul>
-                <li><strong>In the App:</strong> Settings > Delete Account button</li>
-                <li><strong>Email:</strong> Request deletion at pung0805@gmail.com</li>
+                <li><strong>In-app (recommended):</strong> Settings > Delete Account → immediate deletion</li>
+                <li><strong>Web:</strong> <a href="delete-account-en.html" style="color:#ff6b9d;">Account Deletion Guide</a></li>
+                <li><strong>Email:</strong> <a href="mailto:pung0805@gmail.com" style="color:#ff6b9d;">pung0805@gmail.com</a> (processed within 3 business days)</li>
             </ul>
             <p>The following data will be permanently deleted immediately upon account deletion:</p>
             <ul>
